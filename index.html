@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zhao Li's Homepage</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">HOME</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#cv" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Curriculum Vitae</a>
+        <a href="#research" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Research Interest</a>
+        <a href="#publication" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Publication List</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Contact</a>
+      </div>
+
+    <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="photo_homepage.JPG" class="w3-square w3-border w3-border-sand" style="border-width: 4px !important;"/>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">HOME</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Contact</a>
+          <a href="#publication" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Publication List</a>
+          <a href="#research" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Research Interest</a>
+          <a href="#cv" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Curriculum Vitae</a>
+          
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <h1>Zhao Li (李钊)</h2>
+            <h2>Ph.D. student<h3>
+            <h2>@ Department of Astronomy, University of Science and Technology of China (USTC)<h3>
+            <h2>@ Department of Physics, Graduate School of Science, Kyoto University<h3>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="cv" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Curriculum Vitae</h2>
+            <p class="w3-margin-top-2"> 
+              2015.9--2019.6, Undergraduate student at School of Space Science and Physics, Shandong University (Weihai).
+            </p>
+            <p class=""> 
+              2019.9--present, Postgraduate and Ph.D. student at Department of Astronomy, University of Science and Technology of China, supervised by Professor Wen Zhao (赵文).
+            </p>
+            <p class=""> 
+              2024.1--present, visiting Ph.D. student at Division of Physics and Astronomy, Graduate School of Science, Kyoto University, supervised by Professor Takahiro Tanaka (田中貴浩).
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="research" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Research Interest</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <div class="">
+                <h4>Relativistic Astrophysics</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Gravitational lensing and black hole scattering</li>
+                  <li>Gravitational waveforms from binary systems in GR and modified gravities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--publication list-->
+          <div id="publication" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Publication List</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Hao Wang, Yuan-Chuan Zou, Qing-Wen Wu, Xiaolin Liu, <b>Zhao Li</b>, A complete waveform comparison of post-Newtonian and numerical relativity in eccentric orbits, <a href="https://arxiv.org/abs/2409.17636" target="_blank">[arxiv.2409.17636].</a></p>
+              <p><b>Zhao Li</b>, Xiao Guo, Tan Liu, Tao Zhu, Wen Zhao, Schwarzschild lensing from geodesic deviation, submitted to JCAP, <a href="https://arxiv.org/abs/2409.06281" target="_blank">[arxiv.2409.06281].</a></p>
+              <p>Ran Chen, <b>Zhao Li</b>, Yinjie Li, Yiying Wang, Rui Niu, Wen Zhao, Yizhong Fan, Forecast analysis of astrophysical stochastic gravitational wave background beyond general relativity: a case study on Brans-Dicke gravity, submitted to JCAP, <a href="https://arxiv.org/abs/2407.12328" target="_blank">[arxiv.2407.12328].</a></p>
+              <p>Xinyue Jiang, Xin Ren, <b>Zhao Li</b>, Yifu Cai and Xinzhong Er, Exploring f(T) Gravity via strongly lensed fast radio bursts, MNRAS, Volume 528, Issue 2, February 2024, Pages 1965–1978, <a href="https://arxiv.org/abs/2401.05464" target="_blank">[arxiv.2401.05464].</a></p>
+              <p><b>Zhao Li</b>, Jin Qiao, Tan Liu, Rui Niu, Shaoqi Hou, Tao Zhu and Wen Zhao, Gravitational Radiation from Eccentric Binary Black Hole System in Dynamical Chern-Simons Gravity, JCAP05(2024)073, <a href="https://arxiv.org/abs/2309.05991" target="_blank">[arxiv.2309.05991].</a></p>
+              <p>Jin Qiao, <b>Zhao Li</b>, Ran Ji, Tao Zhu, Guoliang Li, Wen Zhao and Jiming Chen, Constraints on the ghost-free parity-violating gravity from Laser-ranged Satellites, JCAP10(2023)066, <a href="https://arxiv.org/abs/2307.12886" target="_blank">[arXiv:2307.12886].</a></p>
+              <p><b>Zhao Li</b>, Jin Qiao, Tan Liu, Tao Zhu and Wen Zhao, Gravitational Waveform and Polarization from Binary Black Hole Inspiral in Dynamical Chern-Simons Gravity: From Generation to Propagation, JCAP04(2023)006, <a href="https://arxiv.org/abs/2211.12188" target="_blank">[arxiv.2211.12188].</a></p>
+              <p>Jin Qiao, <b>Zhao Li</b>, Tao Zhu, Ran Ji, Guoliang Li and Wen Zhao, Testing parity symmetry of gravity with gravitational waves, Frontiers in Astronomy and Space Sciences, 9, 1109086, <a href="https://arxiv.org/abs/2211.16825" target="_blank">[arXiv:2211.16825].</a></p>
+              <p><b>Zhao Li</b>, Jin Qiao, Wen Zhao and Xinzhong Er, Gravitational Faraday rotation of gravitational waves by a Kerr black hole, JCAP10(2022)095, <a href="https://arxiv.org/abs/2204.10512" target="_blank">[arxiv.2204.10512].</a> </p>
+              <p>Lulu Fan, Yunkun Han, Guanwen Fang, Ying Gao, Dandan Zhang, Xiaoming Jiang, Qiaoqian Wu, Jun Yang, and <b>Zhao Li</b>, The Most Luminous Heavily Obscured Quasars Have a High Merger Fraction: Morphological Study of Wise-Selected Hot Dust-Obscured Galaxies, <a href="https://iopscience.iop.org/article/10.3847/2041-8205/822/2/L32" target="_blank">ApJL 822 L32 (2016).</a> </p>
+            </div>
+          </div>
+
+          <!--Conferences-->
+          <div id="conferences" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">Conferences</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>2024.08.05-08.07: New Physics from Gravitational Waves。(Kyoto, Japan)</a></p>
+              <p>2024.06.04: Cosmology Seminar at YITP。(Kyoto, Japan)</a></p>
+              <p>2024.02.01-03.01: YITP long-term workshop, Gravity and Cosmology 2024 (GC2024)。(Kyoto, Japan)</a></p>
+              <p>2023.11.25: 中国科学技术大学第十三届物理学院研究生学术年会暨第一届中国科大物理学院与港科大物理系学术论坛。(合肥)</a></p>
+              <p>2023.10.17-10.20: 山东大学(青岛)张宏教授课题组访问。(青岛)</p>
+              <p>2023.10.04: Gravity Seminar in Kyoto University (Host: Prof. Takahiro Tanaka). (online)</p>
+              <p>2023.09.15-09.18: 大连引力与宇宙学研讨会。(大连)</p>
+              <p>2023.08.30-09.02: 中国天文学会2023年学术年会。(威海)</p>
+              <p>2023.05.07-05.11: 首届“快速射电暴及其天体物理研讨会”。(合肥)</p>
+              <p>2023.04.21-04.25: 中国物理学会引力与相对论天体物理分会2023年学术年会。(重庆)</p>
+              <p>2023.04.14-04.17: 时域引力透镜专题第一次研讨会。(镇江)</p>
+              <p>2023.03.06: Gravity Seminar in University of Virginia (Host: Dr. Kent Yagi). (online)</p>
+              <p>2022.07.03-07.08: 中国物理学会引力与相对论天体物理分会2022年学术年会。(溧阳)</p>
+              <p>2022.05.05: 武汉大学范锡龙教授课题组报告。(线上)</p>
+              <p>2021.08.08-08.20: “早期宇宙与引力波物理学”2021年理论物理前沿讲习班。(杭州)</p>
+              <p>2021.06.21-06.25: 2021引力波天体物理国际会议。(合肥)</p>
+            </div>
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">My contact details </h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Zhao Li (李钊)</p>
+              <p>Adress: 17005 Lihua building, Jinzhai Road No.96, Hefei, Anhui Province, China</p>
+              <p>Phone number: +86 17862722375</p>
+              <p>E-mail: lz111301@mail.ustc.edu.cn</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - Zhao Li</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
